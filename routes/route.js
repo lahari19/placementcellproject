@@ -10,6 +10,9 @@ route.get('/customhome',function(req,res){
 route.get('/students',(req,res)=>{
     res.render('students')
 })
+route.get('/faq',(req,res)=>{
+    res.render('faq')
+})
 route.get('/contactUs',(req,res)=>{
     res.render('contactUs');
 })
@@ -33,7 +36,7 @@ route.get('/login',(req,res)=>{
 })
 route.post('/login',(req,res)=>{
     console.log(req.body);
-    
+
 })
 route.get('/facilities',(req,res)=>{
     res.render('facilities')
